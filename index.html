@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IIFL Individual Bidder Details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /*-----------------------------------------------------------------NAV-------------------------------------------------------*/
+
+
+        .user-menu a img {
+            height: 30px;
+            width: 30px;
+        }
+
+        nav a img {
+            width: 202px;
+            padding: 4px;
+        }
+
+        a:any-link,
+        #user {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: capitalize;
+            font-family: 'Almarai';
+        }
+
+        a:any-link:hover {
+            color: #f3912e;
+        }
+
+        .user-dropdown form label img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 5px;
+
+        }
+
+        #user {
+            position: relative;
+            left: 35px;
+            border: none;
+            border-color: transparent;
+            outline: none;
+            text-align: center;
+            font-size: 15px;
+            padding: 4px 10px 10px 0px;
+            width: 120px;
+            margin-right: 15px;
+            background-color: transparent;
+        }
+
+
+        .contact-info {
+            padding-left: 30px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex: 1, 1, 100px;
+            font-size: 15px;
+            font-weight: 200;
+        }
+
+        .center-info {
+            display: flex;
+            flex: 1, 1, 20px;
+        }
+
+        .Buy,
+        .E-Auctions,
+        .Sell {
+            padding: 20px;
+        }
+
+        .right-info {
+            display: flex;
+            /* padding: 20px; */
+            gap: 40px;
+            padding-top: 20px;
+
+        }
+        /*-------------------------------------------------------------Main content---------------------------------------------------*/
+        .bidder-details {
+            margin: 0% auto;
+            width: 78%;
+            height: fit-content;
+        }
+     
+
+        .container1,
+        .container2,
+        .container3 {
+            display: flex;
+            width: 100%;
+            margin: 20px 0px 10px 0px;
+            padding: 10px;
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 20px 0px 10px 0px;
+            padding: 10px;
+            height: 200px;
+        }
+
+        #f4 {
+            margin: 0% auto;
+        }
+
+        #btn {
+            background-color: #EF5713;
+            color: white;
+            border-radius: 5Spx;
+            border: none;
+        }
+
+        #btn:hover {
+            background-color: #f3763c;
+            color: white;
+        }
+
+        fieldset {
+            margin: 0% auto;
+            border: 0;
+            box-shadow: none;
+            padding: 0%;
+        }
+
+        input, #bidder{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #f0f0f0;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        #bidder{
+            width: 94%;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="button"],
+        input[type="date"],
+        input[type="email"],
+        input[type="numeric"],
+        input[type="checkbox"],
+        #bidder,
+        textarea {
+            border: none;
+            outline: none;
+            border: 1px solid #929292;
+        }
+
+
+        label {
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+        legend {
+            font-weight: 800;
+            font-size: 25px;
+        }
+
+        #file {
+            display: none;
+        }
+
+        #file-label {
+            margin: 10px;
+            
+        }
+        #file-label:hover{
+            opacity: 0.5;
+        }
+
+        #imagee {
+            max-width: 200px;
+            border: 2px dashed #dedede;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        #imagee:hover {
+            border: 2px dashed #999;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .phone-mail {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .aadhar-pan {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #address-input {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#"><img src="./logo.png" alt="One Home Image" type="One Home" /></a>
+        <section class="center-info">
+            <div class="Buy"><a href="#">Buy</a></div>
+            <div class="E-Auctions"><a href="#">E-Auctions</a></div>
+            <div class="Sell"><a href="#">Sell</a></div>
+        </section>
+        <section class="right-info">
+            <div class="contact-info">
+                <a href="#"><span id="contact-txt">Contact Us</span></a>
+            </div>
+            <div class="user-dropdown">
+                <form action="#" id="form">
+                    <label for="User-information"><img src="./placeholder.jpeg" alt="user-profile-img" /></label>
+                    <select name="Admin" id="user">
+                        <option id="no-display" value="My Profile" selected disabled style="display: none;">Aditya Rawat</option>
+                        <option value="My Profile"><a href="#">My Profile</a></option>
+                        <option value="Recent Searches"><a href="#">Recent
+                                Searches</a></option>
+                        <option value="Viewed Properties"><a href="#">Viewed Properties</a></option>
+                        <option value="Saved Properties"><a href="#">Saved Properties</a></option>
+                        <option value="My Bids"><a href="#">My Bids</a></option>
+                        <option value="My Listings"><a href="#">My Listings</a></option>
+                        <option value="Logout"><a href="#">Logout</a></option>
+                    </select>
+                </form>
+            </div>
+            <div class="user-menu">
+                <a href="#"><img src="hamburgur.png" alt="user-menu-img" /></a>
+                <!-- ≡ -->
+
+            </div>
+        </section>
+    </nav>
+    <section class="bidder-details">
+
+        <div class="container1">
+
+            <fieldset id="f1">
+                <legend>Bidder Details</legend>
+                <div class="bidder">
+                    <form action="">
+                        <select name="bidder" id = "bidder" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option id="types"disabled>Register As (Individual, Company, Other)</option>
+                            <option id="individual" value="./index.html">Individual</option>
+                            <option id="Company" value="./company.html">Company</option>
+                            <option id="Other" value="#" >Other</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="aadhar-pan">
+                    <form>
+                        <input name="aadhaar" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                            autocomplete="cc-number" maxlength="12" placeholder="Aadhaar Card Number*" required
+                            onclick="changebg1()" />
+                        <input type="button" name="aadhaar" value="Verify" id="btn" onclick=""
+                            style="width: fit-content" onclick="changebg1()" />
+                    </form>
+
+
+                    <form>
+                        <input name="pan" type="text" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]" maxlength="10"
+                            placeholder="PAN Card Number*" required onclick="changebg1()" />
+                        <input type="button" name="pan-card" value="Verify" id="btn" onclick=""
+                            style="width: fit-content" onclick="changebg1()" />
+                    </form>
+                </div>
+                <input name="first-name" type="text" pattern="[A-Za-z]" maxlength="20" placeholder="First Name *"
+                    onclick="changebg1()" />
+                <input name="last-name" type="text" pattern="[A-Za-z]" maxlength="20" placeholder="Middle Name *"
+                    onclick="changebg1()" />
+                <input name="last-name" type="text" pattern="[A-Za-z]" maxlength="20" placeholder="Last Name *"
+                    onclick="changebg1()" />
+                <input name="dob" type="date" value="2002-08-08" onclick="changebg1()" />
+                <input name="father-name" type="text" pattern="[A-Za-z]" maxlength="20"
+                    placeholder="Father/Husband's Name*" onclick="changebg1()" />
+                <div class="phone-mail">
+                    <form>
+                        <input name="phone" type="tel" maxlength="10" pattern="\d{10}" placeholder="Phone Number*"
+                            required onclick="changebg1()" />
+                    </form>
+                    <form>
+                        <input name="email" type="email" placeholder="Email ID"
+                            pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+                            onclick="changebg1()" />
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+        <div class="container2">
+            <fieldset id="f2">
+                <legend>Correspondence Address</legend>
+                <form>
+                    <input name="address" id="address-input" type="text" placeholder="Address, House No., Building*"
+                        onclick="changebg2()" />
+                    <input name="pin-code" type="numeric" placeholder="Pincode*" maxlength="6" onclick="changebg2()" />
+                    <input name="street-area" type="text" placeholder="Street/Area*" onclick="changebg2()" />
+                    <input name="city" type="text" placeholder="City*" onclick="changebg2()" />
+                    <input name="state" type="text" placeholder="State*" onclick="changebg2()" />
+                </form>
+            </fieldset>
+        </div>
+        <div class="container3">
+            <fieldset id="f3">
+                <legend>Permanent Address <span class="check-box"> <input type="checkbox" id="check-box"
+                            name="check-box" style="width: fit-content;" checked onclick="changebg3()" />
+                        <label for="check-box">Same as Correspondence Address</label></span></legend>
+                <form>
+                    <input name="address" id="address-input" type="text" placeholder="Address, House No., Building*"
+                        onclick="changebg3()" />
+                    <input name="pin-code" type="numeric" placeholder="Pincode*" maxlength="6" required
+                        onclick="changebg3()" />
+                    <input name="street-area" type="text" placeholder="Street/Area*" required onclick="changebg3()" />
+                    <input name="city" type="text" placeholder="City*" required onclick="changebg3()" />
+                    <input name="state" type="text" placeholder="State*" required onclick="changebg3()" />
+                </form>
+            </fieldset>
+        </div>
+        <div class="container4">
+            <fieldset id="f4">
+                <legend id="Upload-Documents-legend">Upload Documents</legend>
+                <form class="container">
+
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/HC2JcdC/Profile-Picture.png" alt="aadhaar"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/rkJHpF3/Upload-PAN-Card.png"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/MBPg8PP/Upload-Aadhar-Front-Side.png"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/fnCJy72/Upload-Aadhar-Back-Side.png"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/Z6q9d0M/Upload-Aadhar-Proof.png"
+                            id="imagee" /></label>
+
+                            
+            </fieldset>
+        
+    </section>
+
+    <script>
+        function changebg1() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+            if (mediaQuery.matches) {
+                document.querySelector(".container1").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }
+            else {
+                document.querySelector(".container1").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+                document.querySelector(".container1").style.borderRadius = "15px"
+
+                setTimeout(() => {
+                    document.querySelector(".container1").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+
+                }, 1500);
+            }
+        };
+        function changebg2() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+            if (mediaQuery.matches) {
+                document.querySelector(".container2").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }
+            else {
+                document.querySelector(".container2").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+                document.querySelector(".container2").style.borderRadius = "15px"
+
+                setTimeout(() => {
+                    document.querySelector(".container2").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+
+                }, 1500);
+            }
+        };
+        function changebg3() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+            if (mediaQuery.matches) {
+                document.querySelector(".container3").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }
+            else {
+                document.querySelector(".container3").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+                document.querySelector(".container3").style.borderRadius = "15px"
+
+                setTimeout(() => {
+                    document.querySelector(".container3").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+
+                }, 1500);
+            }
+        };
+        function changebg4() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+            if (mediaQuery.matches) {
+                document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+                document.querySelector(".container4").style.width = "100%";
+                
+            }
+            else {
+                document.querySelector(".container4").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+                document.querySelector(".container4").style.borderRadius = "15px"
+
+                setTimeout(() => {
+                    document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+
+                }, 1500);
+            }
+        };
+
+    </script>
+</body>
+
+</html>

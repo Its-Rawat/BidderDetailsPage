@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0%;padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*
+--------------------------------------------------------------------------NAV-----------------------------------------------------
+*/
+
+.user-menu a img {
+    height: 30px;
+    width: 30px;
+}
+
+nav a img {
+    width: 202px;
+    padding: 4px;
+}
+
+a:any-link,
+#user {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Almarai';
+}
+
+a:any-link:hover {
+    color: #f3912e;
+}
+
+.user-dropdown form label img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 5px;
+
+}
+
+#user {
+    position: relative;
+    left: 35px;
+    border: none;
+    border-color: transparent;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 4px 10px 10px 0px;
+    width: 120px;
+    margin-right: 15px;
+    background-color: transparent;
+}
+
+
+.contact-info {
+    padding-left: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1, 1, 100px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.center-info {
+    display: flex;
+    flex: 1, 1, 20px;
+}
+
+.Buy,
+.E-Auctions,
+.Sell {
+    padding: 20px;
+}
+
+.right-info {
+    display: flex;
+    /* padding: 20px; */
+    gap: 40px;
+    padding-top: 20px;
+
+}
+
+/*
+----------------------------------------------------main----------------------------------------------------------------------------
+*/
+
+.form-container{
+    margin: 0% auto;
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container1, .container2, .container3, .container4{
+    margin: 20px;
+    padding: 10px;
+    width: 78%;
+    border-radius: 15px;
+}
+
+.pan-verify{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phone-email{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin: 0% auto;
+    border: 0;
+    box-shadow: none;
+    padding: 0%;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.check-box{
+    width: fit-content;
+}
+input[type="text"],
+input[type="tel"],
+input[type="button"],
+input[type="date"],
+input[type="email"],
+input[type="numeric"],
+#company-type,
+#bidder,
+textarea {
+    border: 1px solid #f0f0f0;
+    outline: none;
+    border: 1px solid #929292;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: max-content;
+    
+}
+
+#bidder{
+    width: 91%;
+}
+
+#name{
+    width: max-content;
+    width: 90%;
+    
+}
+
+#address-input{
+    width: 80%;
+}
+#company-type{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px; 
+    width: 90%;
+
+}
+
+#imagee {
+    max-width: 180px;
+    border: 2px dashed #dedede;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#imagee:hover {
+    border: 2px dashed #999;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#file {
+    display: none;
+}
+
+#btn {
+    background-color: #EF5713;
+    color: white;
+    border-radius: 5Spx;
+    border: none;
+}
+
+#btn:hover {
+    background-color: #f3763c;
+    color: white;
+}
+
+
+
+
+    
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#"><img src="https://i.ibb.co/VN13NnD/logo.png" alt="One Home Image" type="One Home" id="imagess"/></a>
+        <section class="center-info">
+            <div class="Buy"><a href="#">Buy</a></div>
+            <div class="E-Auctions"><a href="#">E-Auctions</a></div>
+            <div class="Sell"><a href="#">Sell</a></div>
+        </section>
+        <section class="right-info">
+            <div class="contact-info">
+                <a href="#"><span id="contact-txt">Contact Us</span></a>
+            </div>
+            <div class="user-dropdown">
+                <form action="#" id="form">
+                    <label for="User-information"><img src="https://i.ibb.co/Yh6FW5V/placeholder.jpg" alt="user-profile-img" /></label>
+                    <select name="Admin" id="user">
+                        <option id="no-display" value="My Profile" selected disabled>Aditya Rawat</option>
+                        <option value="My Profile"><a href="#">My Profile</a></option>
+                        <option value="Recent Searches"><a href="#">Recent Searches></a></option>
+                        <option value="Viewed Properties"><a href="#">Viewed Properties</a></option>
+                        <option value="Saved Properties"><a href="#">Saved Properties</a></option>
+                        <option value="My Bids"><a href="#">My Bids</a></option>
+                        <option value="My Listings"><a href="#">My Listings</a></option>
+                        <option value="Logout"><a href="#">Logout</a></option>
+                    </select>
+                </form>
+            </div>
+            <div class="user-menu">
+                <a href="#"><img src="https://i.ibb.co/0rjN3hw/hamburgur.png" alt="user-menu-img" /></a>
+                
+                
+            </div>
+        </section>
+    </nav>
+    <div class="form-container">
+        <div class="container1">
+            <fieldset>
+                <legend>Bidder-Details</legend>
+                <div class="bidder">
+                    <form action="">
+                        <select name="bidder" id = "bidder" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option id="types"disabled>Register As (Individual, Company, Other)</option>
+                            <option id="Company" value="./company.html">Company</option>
+                            <option id="individual" value="./index.html">Individual</option>
+                            <option id="Other" value="#" >Other</option>
+                        </select>
+                    </form>
+                </div>
+                <form>
+                    <input name="company-name" id="name" type="text" placeholder="Company Name" onclick="changebg1()" />
+                </form>
+
+                <div class="pan-verify">
+                    <form>
+                        <input name="pan" type="text" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]" maxlength="10"
+                            placeholder="PAN Card Number*" required onclick="changebg1()" />
+
+                    </form>
+                    <form>
+                        <input type="button" name="pan-button" value="Verify" id="btn" onclick="changebg1()" />
+                    </form>
+                </div>
+                <div class="phone-email">
+                    <form>
+                        <input name="phone" type="tel" maxlength="10" pattern="\d{10}" placeholder="Phone Number*" required onclick="changebg1()" />
+                    </form>
+                    <form>
+                        <input name="Email" type="email" placeholder="Email ID" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required onclick="changebg1()" />
+                    </form>
+                </div>
+                <form>
+                    <input name="gst-number" type="numeric" placeholder="GST Register Number" onclick="changebg1()" />
+                    <input name="date-of-incrporation" required="" type="text" class="form-control"
+                        placeholder="Date-of-Incrporation" onfocus="(this.type='date')" onclick="changebg1()" />
+                </form>
+
+
+
+                <form>
+                    <input name="representative" type="text" placeholder="Authorized Representative"
+                        onclick="changebg1()" />
+                    <label for="company-type"></label>
+                    <select name="type" id="company-type">
+                        <option id="no-display" selected disabled style="display: none;">Company Type</option>
+                        <option value="Sole Proprietorship">Sole Proprietorship</option>
+                        <option value="Partnership Firm">Partnership Firm</option>
+                        <option value="Limited Liability Partnership">Limited Liability Partnership</option>
+                        <option value="Private or Public Limited Company">Private or Public Limited Company
+                        </option>
+                    </select>
+                </form>
+
+            </fieldset>
+        </div>
+        <div class="container2">
+            <fieldset id="f2">
+                <legend>Correspondence Address</legend>
+                <form>
+                    <input name="address" id="address-input" type="text" placeholder="Address, House No., Building*"
+                        onclick="changebg2()" />
+                    <input name="pin-code" type="numeric" placeholder="Pincode*" maxlength="6"
+                        onclick="changebg2()"></input>
+                    <input name="street-area" type="text" placeholder="Street/Area*" onclick="changebg2()"></input>
+                    <input name="city" type="text" placeholder="City*" onclick="changebg2()"></input>
+                    <input name="state" type="text" placeholder="State*" onclick="changebg2()"></input>
+                </form>
+            </fieldset>
+        </div>
+        <div class="container3">
+            <fieldset id="f3">
+                <legend>Permanent Address <span class="check-box"> <input type="checkbox" id="check-box"
+                            name="check-box" checked onclick="changebg3()" />
+                        <label for="check-box">Same as Correspondence Address</label></span></legend>
+                <form>
+                    <input name="address" id="address-input" type="text" placeholder="Address, House No., Building*"
+                        onclick="changebg3()" />
+                    <input name="pin-code" type="numeric" placeholder="Pincode*" maxlength="6"required onclick="changebg3()" />
+                    <input name="street-area" type="text" placeholder="Street/Area*" onclick="changebg3()" />
+                    <input name="city" type="text" placeholder="City*" onclick="changebg3()" />
+                    <input name="state" type="text" placeholder="State*" onclick="changebg3()" />
+                </form>
+            </fieldset>
+        </div>
+        <div class="container4">
+            <fieldset id="f4">
+                <legend id="Upload-Documents-legend">Upload Documents</legend>
+                <form class="container">
+
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/7jsTpQF/aadhaar.png" alt="aadhaar"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/7jsTpQF/aadhaar.png"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/7jsTpQF/aadhaar.png"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/7jsTpQF/aadhaar.png"
+                            id="imagee" /></label>
+                    <input type="file" id="file" onclick="changebg4()" />
+                    <label id="file-label" for="file"><img src="https://i.ibb.co/7jsTpQF/aadhaar.png"
+                            id="imagee" /></label>
+
+
+            </fieldset>
+        </div>
+        </section>
+
+    </div>
+
+
+
+    <script defer>
+
+        function changebg1() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+                if (mediaQuery.matches) {
+                    document.querySelector(".container1").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+                }
+                else{
+            document.querySelector(".container1").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            
+            setTimeout(() => {
+                document.querySelector(".container1").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }, 1500);}
+        };
+        function changebg2() {
+            document.querySelector(".container2").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            setTimeout(() => {
+                document.querySelector(".container2").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }, 1500);
+        };
+        function changebg3() {
+            document.querySelector(".container3").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            setTimeout(() => {
+                document.querySelector(".container3").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }, 1500);
+        };
+        function changebg4() {
+            document.querySelector(".container4").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            setTimeout(() => {
+                document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+            }, 1500);
+        };
+
+    </script>
+</body>
+
+</html>
