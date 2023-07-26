@@ -421,24 +421,7 @@
                 }, 1500);
             }
         };
-        function changebg4() {
-            const mediaQuery = window.matchMedia('(max-width: 480px)')
-
-            if (mediaQuery.matches) {
-                document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
-                document.querySelector(".container4").style.width = "100%";
-                
-            }
-            else {
-                document.querySelector(".container4").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
-                document.querySelector(".container4").style.borderRadius = "15px"
-
-                setTimeout(() => {
-                    document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
-
-                }, 1500);
-            }
-        };
+       
 
     </script>
 </body>
