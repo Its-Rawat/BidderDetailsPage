@@ -106,7 +106,7 @@ a:any-link:hover {
 
 .form-container{
     margin: 0% auto;
-    width: 85%;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@ textarea {
     outline: none;
     border: 1px solid #929292;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     padding: 5px;
     border-radius: 5px;
     margin: 10px;
@@ -395,22 +395,43 @@ textarea {
             }, 1500);}
         };
         function changebg2() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+                if (mediaQuery.matches) {
+                    document.querySelector(".container2").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+                }
+                else{
             document.querySelector(".container2").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            
             setTimeout(() => {
                 document.querySelector(".container2").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
-            }, 1500);
+            }, 1500);}
         };
         function changebg3() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+                if (mediaQuery.matches) {
+                    document.querySelector(".container3").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+                }
+                else{
             document.querySelector(".container3").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            
             setTimeout(() => {
                 document.querySelector(".container3").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
-            }, 1500);
+            }, 1500);}
         };
         function changebg4() {
+            const mediaQuery = window.matchMedia('(max-width: 480px)')
+
+                if (mediaQuery.matches) {
+                    document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
+                }
+                else{
             document.querySelector(".container4").style.boxShadow = "3px 3px 10px #bebebe,-3px -3px 10px #ffffff";
+            
             setTimeout(() => {
                 document.querySelector(".container4").style.boxShadow = "0px 0px 0px #bebebe,0px 0px 0px #ffffff";
-            }, 1500);
+            }, 1500);}
         };
 
     </script>
