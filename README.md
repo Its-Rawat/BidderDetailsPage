@@ -1,1 +1,1 @@
-# test1
+# Bidder Details Page
